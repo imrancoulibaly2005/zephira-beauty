@@ -1,0 +1,131 @@
+{
+  "store": { "name": "Velora Beauty", "currency": "EUR", "freeShippingFrom": 60 },
+  "products": [
+    {
+      "handle": "rouge-velours-liquide-mat", "sku": "VLB-LIP-001", "title": "Rouge Velours – Rouge à lèvres liquide mat",
+      "vendor": "Velora Beauty", "type": "Lèvres", "art": "lipstick", "price": 24.0, "compareAt": null, "badge": "Best-seller",
+      "tags": ["lèvres", "mat", "longue tenue"],
+      "short": "Fini velours ultra-pigmenté, 16h de tenue sans transfert.",
+      "description": "Une formule liquide qui sèche en un voile velouté confortable. Pigments haute définition, applicateur doe-foot pour un tracé précis en un seul passage. Enrichi en huile d'argan et vitamine E.",
+      "details": ["Tenue jusqu'à 16h", "Sans transfert, confortable", "Vegan & cruelty-free", "Contenance : 5 ml"],
+      "shades": [["Nude Rose", "#c68b7d"], ["Terracotta", "#b5543a"], ["Rouge Passion", "#b3122a"], ["Prune Noire", "#5a1030"], ["Corail Soleil", "#e5684f"], ["Mauve Soir", "#8f4a66"]]
+    },
+    {
+      "handle": "gloss-cristal-volume", "sku": "VLB-LIP-002", "title": "Gloss Cristal – Gloss repulpant",
+      "vendor": "Velora Beauty", "type": "Lèvres", "art": "gloss", "price": 22.0, "compareAt": null, "badge": "Nouveau",
+      "tags": ["lèvres", "gloss", "repulpant"],
+      "short": "Effet miroir et lèvres visuellement repulpées.",
+      "description": "Un gloss non collant à l'effet verre liquide. L'acide hyaluronique hydrate et repulpe, la brillance dure des heures. Se porte seul ou sur votre rouge préféré.",
+      "details": ["Effet repulpant", "Non collant", "Vegan", "Contenance : 8 ml"],
+      "shades": [["Cristal", "#f0c9c0"], ["Pêche Dorée", "#eaa27f"], ["Rose Bonbon", "#e27c9a"], ["Cerise Glacée", "#c93a56"], ["Cappuccino", "#a9735c"]]
+    },
+    {
+      "handle": "crayon-contour-levres", "sku": "VLB-LIP-003", "title": "Crayon Contour Lèvres Waterproof",
+      "vendor": "Velora Beauty", "type": "Lèvres", "art": "liner", "price": 16.0, "compareAt": null, "badge": "",
+      "tags": ["lèvres", "crayon", "waterproof"],
+      "short": "Tracé précis, texture crémeuse, résiste à l'eau.",
+      "description": "Dessinez, définissez et comblez vos lèvres avec une mine ultra-crémeuse qui ne tire pas. Waterproof, il prolonge la tenue de tous vos rouges.",
+      "details": ["Waterproof", "Mine crémeuse", "Taille-crayon inclus", "Poids : 1,2 g"],
+      "shades": [["Nude Naturel", "#b97c6b"], ["Brun Chocolat", "#6b3a2e"], ["Rouge Vif", "#b3122a"], ["Rose Poudré", "#c9788a"]]
+    },
+    {
+      "handle": "palette-desert-dore", "sku": "VLB-EYE-001", "title": "Palette Désert Doré – 18 fards",
+      "vendor": "Velora Beauty", "type": "Yeux", "art": "palette", "pans": 18, "price": 62.0, "compareAt": null, "badge": "Best-seller",
+      "tags": ["yeux", "palette", "pailleté"],
+      "short": "18 teintes chaudes, mates, satinées et métalliques.",
+      "description": "Notre palette signature réunit 18 fards aux finis variés : mats veloutés, satinés, métalliques et pailletés. Texture beurrée, ultra-pigmentée, facile à estomper. Du regard naturel au smoky glamour.",
+      "details": ["18 fards x 1,2 g", "Miroir intégré", "Vegan & cruelty-free", "Pigmentation intense"],
+      "shades": [["Désert Doré", "#c8893f"]]
+    },
+    {
+      "handle": "palette-nude-soleil", "sku": "VLB-EYE-002", "title": "Palette Nude Soleil – 9 fards",
+      "vendor": "Velora Beauty", "type": "Yeux", "art": "palette", "pans": 9, "price": 38.0, "compareAt": null, "badge": "",
+      "tags": ["yeux", "palette", "nude"],
+      "short": "L'essentiel du regard nude, du jour à la nuit.",
+      "description": "Neuf teintes nude et rosées pour tous les jours. Mats et satinés se superposent sans effort pour un regard lumineux et sophistiqué.",
+      "details": ["9 fards x 1,5 g", "Format voyage", "Vegan", "Miroir intégré"],
+      "shades": [["Nude Soleil", "#c99a86"], ["Rose Fumé", "#a8707a"]]
+    },
+    {
+      "handle": "mascara-volume-noir-intense", "sku": "VLB-EYE-003", "title": "Mascara Volume Noir Intense",
+      "vendor": "Velora Beauty", "type": "Yeux", "art": "mascara", "price": 28.0, "compareAt": null, "badge": "",
+      "tags": ["yeux", "mascara", "volume"],
+      "short": "Volume XXL et cils définis, sans paquets.",
+      "description": "Une brosse en silicone qui sépare et recourbe chaque cil, une formule noir intense enrichie en kératine pour un volume spectaculaire qui ne s'effrite pas.",
+      "details": ["Noir intense", "Brosse silicone", "Testé ophtalmologiquement", "Contenance : 10 ml"],
+      "shades": [["Noir Intense", "#1a1a1a"]]
+    },
+    {
+      "handle": "eyeliner-precision-noir", "sku": "VLB-EYE-004", "title": "Eyeliner Précision Waterproof",
+      "vendor": "Velora Beauty", "type": "Yeux", "art": "eyeliner", "price": 19.0, "compareAt": null, "badge": "",
+      "tags": ["yeux", "eyeliner", "waterproof"],
+      "short": "Trait ultra-fin ou graphique, tenue 24h.",
+      "description": "Un feutre à la pointe ultra-fine pour un trait net du premier coup. Noir profond, séchage rapide, résistant à l'eau et aux frottements.",
+      "details": ["Pointe feutre 0,1 mm", "Tenue 24h", "Waterproof", "Contenance : 1,2 ml"],
+      "shades": [["Noir Profond", "#161616"], ["Brun Espresso", "#4a2c22"]]
+    },
+    {
+      "handle": "fond-de-teint-soie-24h", "sku": "VLB-FACE-001", "title": "Fond de Teint Soie 24h",
+      "vendor": "Velora Beauty", "type": "Teint", "art": "foundation", "price": 39.0, "compareAt": null, "badge": "Best-seller",
+      "tags": ["teint", "fond de teint", "fini naturel"],
+      "short": "Couvrance modulable, fini peau parfaite.",
+      "description": "Un fond de teint fluide qui épouse la peau pour un rendu soyeux et naturel. Couvrance modulable de légère à haute, résiste à la chaleur et ne marque pas. Disponible en 12 teintes pour toutes les carnations.",
+      "details": ["12 teintes", "Fini naturel satiné", "Sans huile, non comédogène", "Contenance : 30 ml"],
+      "shades": [["Porcelaine 10", "#f0d3bd"], ["Ivoire 20", "#e8c4a5"], ["Beige 30", "#d9ae8a"], ["Miel 40", "#c48e63"], ["Caramel 50", "#a9704a"], ["Noisette 60", "#8a5738"], ["Ébène 70", "#5d3724"], ["Cacao 80", "#432618"]]
+    },
+    {
+      "handle": "correcteur-lumiere-haute-couvrance", "sku": "VLB-FACE-002", "title": "Correcteur Lumière Haute Couvrance",
+      "vendor": "Velora Beauty", "type": "Teint", "art": "concealer", "price": 24.0, "compareAt": null, "badge": "",
+      "tags": ["teint", "correcteur", "anti-cernes"],
+      "short": "Efface cernes et imperfections, effet regard reposé.",
+      "description": "Un correcteur crémeux à haute couvrance qui illumine le regard sans marquer les ridules. Applicateur doe-foot pour une application précise.",
+      "details": ["Haute couvrance", "Ne marque pas", "8 teintes", "Contenance : 6 ml"],
+      "shades": [["Clair", "#ecc9a8"], ["Moyen", "#d3a47c"], ["Hâlé", "#b07a52"], ["Profond", "#6f4430"]]
+    },
+    {
+      "handle": "blush-petale-poudre", "sku": "VLB-FACE-003", "title": "Blush Pétale – Poudre veloutée",
+      "vendor": "Velora Beauty", "type": "Teint", "art": "blush", "price": 26.0, "compareAt": null, "badge": "Nouveau",
+      "tags": ["teint", "blush", "bonne mine"],
+      "short": "Bonne mine instantanée, fini soyeux modulable.",
+      "description": "Une poudre ultra-fine qui fond sur la peau pour un éclat naturel. Se construit en intensité, du voile de rose au coup de soleil prononcé.",
+      "details": ["Poudre ultra-fine", "Modulable", "Vegan", "Poids : 6 g"],
+      "shades": [["Rose Pétale", "#e49aa0"], ["Pêche Sucrée", "#eb9c7e"], ["Corail Vif", "#e2644e"], ["Baie Sauvage", "#b2455f"], ["Terre Cuite", "#b96b50"], ["Mauve Doux", "#b27a94"]]
+    },
+    {
+      "handle": "highlighter-poudre-d-or", "sku": "VLB-FACE-004", "title": "Highlighter Poudre d'Or",
+      "vendor": "Velora Beauty", "type": "Teint", "art": "highlighter", "price": 32.0, "compareAt": null, "badge": "",
+      "tags": ["teint", "highlighter", "éclat"],
+      "short": "Éclat métallique intense, effet peau lumineuse.",
+      "description": "Des micro-particules de lumière pour un éclat sculpté sur pommettes, arcade et arête du nez. Texture poudre-gelée qui se pose comme une seconde peau.",
+      "details": ["Fini métallique", "Intensité modulable", "Vegan", "Poids : 8 g"],
+      "shades": [["Or Pur", "#e2bb6a"], ["Champagne", "#e8cfae"], ["Rose Doré", "#e1a994"], ["Bronze Lumière", "#c18a52"]]
+    },
+    {
+      "handle": "palette-contour-sculpt", "sku": "VLB-FACE-005", "title": "Palette Contour Sculpt – Duo bronzer & contour",
+      "vendor": "Velora Beauty", "type": "Teint", "art": "contour", "price": 34.0, "compareAt": null, "badge": "",
+      "tags": ["teint", "contour", "bronzer"],
+      "short": "Sculptez le visage avec un duo mat et naturel.",
+      "description": "Un duo contour et bronzer mats aux sous-tons neutres pour un visage structuré sans effet orange. Fondu facile et tenue longue durée.",
+      "details": ["2 teintes mates", "Sous-tons neutres", "Pinceau inclus", "Poids : 12 g"],
+      "shades": [["Clair / Moyen", "#c29272"], ["Moyen / Profond", "#8a5a40"]]
+    },
+    {
+      "handle": "set-pinceaux-signature-15", "sku": "VLB-ACC-001", "title": "Set Pinceaux Signature – 15 pièces",
+      "vendor": "Velora Beauty", "type": "Accessoires", "art": "brushes", "price": 49.0, "compareAt": 65.0, "badge": "-25 %",
+      "tags": ["accessoires", "pinceaux", "set"],
+      "short": "15 pinceaux synthétiques ultra-doux et leur trousse.",
+      "description": "Tout ce qu'il faut pour un maquillage de professionnelle : teint, yeux, lèvres et contour. Poils synthétiques doux, manches dorés, trousse de rangement incluse.",
+      "details": ["15 pinceaux + trousse", "Poils synthétiques vegan", "Lavables", "Manches dorés"],
+      "shades": [["Noir & Or", "#1b1b1b"], ["Rose & Or", "#d79a98"]]
+    },
+    {
+      "handle": "coffret-glam-nuit", "sku": "VLB-SET-001", "title": "Coffret Glam Nuit – Édition limitée",
+      "vendor": "Velora Beauty", "type": "Coffrets", "art": "gift", "price": 79.0, "compareAt": 112.0, "badge": "Édition limitée",
+      "tags": ["coffret", "cadeau", "édition limitée"],
+      "short": "Rouge, gloss, mascara et palette mini : le look de soirée complet.",
+      "description": "Le cadeau idéal : un rouge à lèvres liquide, un gloss cristal, un mascara volume et une mini-palette 9 fards, dans un coffret rigide doré. Plus de 30 % d'économie.",
+      "details": ["4 produits en taille réelle ou mini", "Coffret cadeau rigide", "Économie de 33 €", "Édition limitée"],
+      "shades": [["Rouge & Or", "#b3122a"], ["Nude & Or", "#c68b7d"]]
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Velora Beauty – Maquillage haute performance</title>
+  <meta name="description" content="Velora Beauty : rouges à lèvres, palettes, fonds de teint et accessoires. Maquillage vegan et cruelty-free à l'éclat glamour.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171717'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23c9a24b' font-family='serif'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="home">
+  <main>
+    <section class="hero">
+      <div class="wrap hero-in">
+        <div class="hero-txt">
+          <span class="eyebrow">Nouvelle collection</span>
+          <h1>L'éclat, <em>sans compromis.</em></h1>
+          <p>Pigments intenses, textures confortables, formules vegan. Le maquillage qui vous suit du matin jusqu'au bout de la nuit.</p>
+          <div class="cta"><a href="#boutique" class="btn btn-dark">Découvrir la boutique</a><a href="index.html?cat=Coffrets#boutique" class="btn btn-line">Coffrets cadeaux</a></div>
+        </div>
+        <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <section class="usp"><div class="wrap usp-in">
+      <div>🌿 <strong>Vegan</strong> &amp; cruelty-free</div>
+      <div>🚚 Livraison offerte <strong>dès 60 €</strong></div>
+      <div>💎 Pigments <strong>haute définition</strong></div>
+      <div>↩️ Retours <strong>sous 30 jours</strong></div>
+    </div></section>
+
+    <section class="section" id="boutique"><div class="wrap">
+      <div class="sh"><h2>La boutique</h2><p>Nos incontournables, testés et approuvés.</p></div>
+      <div class="bar-tools">
+        <div class="chips" id="chips"></div>
+        <div class="tools"><span id="count"></span>
+          <select id="sort" aria-label="Trier par"><option value="pop">Populaires</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option></select>
+        </div>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div></section>
+
+    <section class="promo"><div class="wrap promo-in">
+      <div><span class="eyebrow gold">Édition limitée</span><h2>Coffret Glam Nuit</h2><p>Rouge, gloss, mascara et mini-palette dans un coffret doré. <strong>79 €</strong> au lieu de 112 €.</p>
+      <a href="product.html?handle=coffret-glam-nuit" class="btn btn-gold">Je le veux</a></div>
+    </div></section>
+
+    <section class="section news"><div class="wrap">
+      <h2>Rejoignez le club</h2><p>-10 % sur votre première commande, avant-premières et conseils make-up.</p>
+      <form id="news"><input type="email" required placeholder="Votre adresse e-mail" aria-label="E-mail"><button class="btn btn-dark">S'inscrire</button></form>
+    </div></section>
+  </main>
+  <script src="js/art.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
