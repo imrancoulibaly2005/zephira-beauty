@@ -2,7 +2,29 @@
   "store": {
     "name": "Zéphira Beauty",
     "currency": "EUR",
-    "freeShippingFrom": 60
+    "freeShippingFrom": 60,
+    "subs": {
+      "Lèvres": [
+        "Rouge à lèvres",
+        "Gloss",
+        "Crayon à lèvres"
+      ],
+      "Yeux": [
+        "Palettes",
+        "Mascara",
+        "Eyeliner",
+        "Sourcils"
+      ],
+      "Teint": [
+        "Fond de teint",
+        "Correcteur",
+        "Blush",
+        "Enlumineur"
+      ],
+      "Accessoires": [
+        "Pinceaux"
+      ]
+    }
   },
   "products": [
     {
@@ -50,7 +72,8 @@
           "#7a1830"
         ]
       ],
-      "image": "images/products/huda-beauty-liquid-matte-lipstick.jpg"
+      "image": "images/products/huda-beauty-liquid-matte-lipstick.jpg",
+      "sub": "Rouge à lèvres"
     },
     {
       "handle": "huda-beauty-lip-contour-pencil",
@@ -92,7 +115,8 @@
           "#5f3329"
         ]
       ],
-      "image": "images/products/huda-beauty-lip-contour-pencil.webp"
+      "image": "images/products/huda-beauty-lip-contour-pencil.webp",
+      "sub": "Crayon à lèvres"
     },
     {
       "handle": "huda-beauty-desert-dusk-palette",
@@ -124,7 +148,8 @@
           "#c8893f"
         ]
       ],
-      "image": "images/products/huda-beauty-desert-dusk-palette.avif"
+      "image": "images/products/huda-beauty-desert-dusk-palette.avif",
+      "sub": "Palettes"
     },
     {
       "handle": "huda-beauty-faux-filter-foundation",
@@ -175,7 +200,8 @@
           "#5d3724"
         ]
       ],
-      "image": "images/products/huda-beauty-faux-filter-foundation.avif"
+      "image": "images/products/huda-beauty-faux-filter-foundation.avif",
+      "sub": "Fond de teint"
     },
     {
       "handle": "fenty-beauty-gloss-bomb",
@@ -217,7 +243,8 @@
           "#f0d3d0"
         ]
       ],
-      "image": "images/products/fenty-beauty-gloss-bomb.avif"
+      "image": "images/products/fenty-beauty-gloss-bomb.avif",
+      "sub": "Gloss"
     },
     {
       "handle": "fenty-beauty-pro-filtr-foundation",
@@ -267,7 +294,8 @@
           "490",
           "#4a2a1c"
         ]
-      ]
+      ],
+      "sub": "Fond de teint"
     },
     {
       "handle": "fenty-beauty-killawatt-highlighter",
@@ -308,7 +336,8 @@
           "Trophy Wife",
           "#e8cfae"
         ]
-      ]
+      ],
+      "sub": "Enlumineur"
     },
     {
       "handle": "rare-beauty-soft-pinch-liquid-blush",
@@ -355,7 +384,8 @@
           "#c97a8a"
         ]
       ],
-      "image": "images/products/rare-beauty-soft-pinch-liquid-blush.avif"
+      "image": "images/products/rare-beauty-soft-pinch-liquid-blush.avif",
+      "sub": "Blush"
     },
     {
       "handle": "nars-orgasm-blush",
@@ -396,7 +426,8 @@
           "Dolce Vita",
           "#b9707a"
         ]
-      ]
+      ],
+      "sub": "Blush"
     },
     {
       "handle": "nars-radiant-creamy-concealer",
@@ -442,7 +473,8 @@
           "Dark Coffee",
           "#6f4430"
         ]
-      ]
+      ],
+      "sub": "Correcteur"
     },
     {
       "handle": "charlotte-tilbury-pillow-talk-lipstick",
@@ -483,7 +515,8 @@
           "Walk of No Shame",
           "#a8404f"
         ]
-      ]
+      ],
+      "sub": "Rouge à lèvres"
     },
     {
       "handle": "charlotte-tilbury-hollywood-flawless-filter",
@@ -520,7 +553,8 @@
           "Dark",
           "#9a6a46"
         ]
-      ]
+      ],
+      "sub": "Enlumineur"
     },
     {
       "handle": "too-faced-better-than-sex-mascara",
@@ -551,7 +585,8 @@
           "#1a1a1a"
         ]
       ],
-      "image": "images/products/too-faced-better-than-sex-mascara.avif"
+      "image": "images/products/too-faced-better-than-sex-mascara.avif",
+      "sub": "Mascara"
     },
     {
       "handle": "anastasia-beverly-hills-brow-wiz",
@@ -592,7 +627,8 @@
           "Ebony",
           "#1e1a18"
         ]
-      ]
+      ],
+      "sub": "Sourcils"
     },
     {
       "handle": "kvd-beauty-tattoo-liner",
@@ -625,7 +661,8 @@
           "Brun Espresso",
           "#4a2c22"
         ]
-      ]
+      ],
+      "sub": "Eyeliner"
     },
     {
       "handle": "real-techniques-brush-set",
@@ -659,7 +696,8 @@
           "#d79a98"
         ]
       ],
-      "image": "images/products/real-techniques-brush-set.jpg"
+      "image": "images/products/real-techniques-brush-set.jpg",
+      "sub": "Pinceaux"
     },
     {
       "handle": "coffret-zephira-soiree-glamour",
@@ -694,7 +732,8 @@
           "#c68b7d"
         ]
       ],
-      "image": "images/products/coffret-zephira-soiree-glamour.jpg"
+      "image": "images/products/coffret-zephira-soiree-glamour.jpg",
+      "sub": ""
     }
   ]
 }

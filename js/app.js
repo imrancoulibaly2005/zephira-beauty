@@ -79,7 +79,11 @@
     var head = '<div class="topbar">Livraison offerte dès 60 € &nbsp;·&nbsp; Retours sous 30 jours</div>' +
       '<header class="header"><div class="wrap hrow">' +
       '<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span></button>' +
-      '<nav class="nav" id="nav">' + cats.map(function (c) { return '<a href="index.html?cat=' + encodeURIComponent(c) + '#boutique">' + c + '</a>'; }).join('') +
+      '<nav class="nav" id="nav">' + cats.map(function (c) {
+        var subs = (STORE.subs || {})[c] || [];
+        return '<div class="nav-i"><a href="index.html?cat=' + encodeURIComponent(c) + '#boutique">' + c + '</a>' +
+          (subs.length ? '<div class="drop">' + subs.map(function (s) { return '<a href="index.html?cat=' + encodeURIComponent(c) + '&sub=' + encodeURIComponent(s) + '#boutique">' + s + '</a>'; }).join('') + '</div>' : '') + '</div>';
+      }).join('') +
       '<a href="index.html?cat=Promo#boutique" class="hot">Promos</a></nav>' +
       '<a class="logo" href="index.html">Zéphira<small>Beauty</small></a>' +
       '<div class="hact"><button class="ib search-btn" aria-label="Rechercher">' + ICON_SEARCH + '</button>' +
@@ -167,7 +171,8 @@
     $('#promo-img').innerHTML = media(byHandle('coffret-zephira-soiree-glamour'), 0);
 
     var qs = new URLSearchParams(location.search);
-    var cat = qs.get('cat') || 'Tout', brand = qs.get('brand') || '', sort = 'pop';
+    var cat = qs.get('cat') || 'Tout', brand = qs.get('brand') || '', sub = qs.get('sub') || '', sort = 'pop';
+    var SUBS = STORE.subs || {}, subBox = $('#subchips');
     var cats = ['Tout', 'Lèvres', 'Yeux', 'Teint', 'Accessoires', 'Coffrets', 'Promo'];
     var grid = $('#grid'), chips = $('#chips');
     var brands = PRODUCTS.map(function (p) { return p.vendor; }).filter(function (v, i, a) { return a.indexOf(v) === i; }).sort();
@@ -178,7 +183,7 @@
     strip.innerHTML = brands.filter(function (b) { return b !== 'Zéphira Beauty'; }).map(function (b) { return '<button data-b="' + esc(b) + '">' + esc(b) + '</button>'; }).join('');
     strip.onclick = function (e) {
       var b = e.target.closest('button'); if (!b) return;
-      brand = b.dataset.b; cat = 'Tout'; bsel.value = brand; draw();
+      brand = b.dataset.b; cat = 'Tout'; sub = ''; bsel.value = brand; draw();
       $('#boutique').scrollIntoView();
     };
     /* tuiles catégories */
@@ -190,13 +195,20 @@
     }).join('');
     catsBox.onclick = function (e) {
       var a = e.target.closest('.cat'); if (!a) return;
-      e.preventDefault(); cat = a.dataset.c; brand = ''; bsel.value = ''; draw(); $('#boutique').scrollIntoView();
+      e.preventDefault(); cat = a.dataset.c; sub = ''; brand = ''; bsel.value = ''; draw(); $('#boutique').scrollIntoView();
     };
     chips.innerHTML = cats.map(function (c) { return '<button class="chip" data-c="' + c + '">' + c + '</button>'; }).join('');
     function draw() {
       $$('.chip', chips).forEach(function (b) { b.classList.toggle('on', b.dataset.c === cat); });
+      var subs = SUBS[cat] || [];
+      subBox.hidden = !subs.length;
+      subBox.innerHTML = subs.length ? ['Tous'].concat(subs).map(function (s) {
+        var v = s === 'Tous' ? '' : s;
+        return '<button class="chip sub' + (v === sub ? ' on' : '') + '" data-s="' + esc(v) + '">' + esc(s) + '</button>';
+      }).join('') : '';
       var list = PRODUCTS.filter(function (p) {
         if (brand && p.vendor !== brand) return false;
+        if (sub && p.sub !== sub) return false;
         return cat === 'Tout' || (cat === 'Promo' ? !!p.compareAt : p.type === cat);
       });
       if (sort === 'asc') list.sort(function (a, b) { return a.price - b.price; });
@@ -204,7 +216,8 @@
       grid.innerHTML = list.length ? list.map(card).join('') : '<p class="empty">Aucun produit pour cette sélection.</p>';
       $('#count').textContent = list.length + ' produit' + (list.length > 1 ? 's' : '');
     }
-    chips.onclick = function (e) { var b = e.target.closest('.chip'); if (b) { cat = b.dataset.c; draw(); } };
+    chips.onclick = function (e) { var b = e.target.closest('.chip'); if (b) { cat = b.dataset.c; sub = ''; draw(); } };
+    subBox.onclick = function (e) { var b = e.target.closest('.chip'); if (b) { sub = b.dataset.s; draw(); } };
     $('#sort').onchange = function () { sort = this.value; draw(); };
     bindCards(grid);
     draw();
@@ -224,7 +237,7 @@
       var v = p.variants[vi];
       root.innerHTML = '<div class="wrap pgrid">' +
         '<div class="pimg">' + (p.badge ? '<span class="badge' + (p.compareAt ? ' acc' : '') + '">' + esc(p.badge) + '</span>' : '') + media(p, vi) + '</div>' +
-        '<div class="pinfo"><nav class="crumb"><a href="index.html">Accueil</a> / <a href="index.html?cat=' + encodeURIComponent(p.type) + '#boutique">' + p.type + '</a></nav>' +
+        '<div class="pinfo"><nav class="crumb"><a href="index.html">Accueil</a> / <a href="index.html?cat=' + encodeURIComponent(p.type) + '#boutique">' + p.type + '</a>' + (p.sub ? ' / <a href="index.html?cat=' + encodeURIComponent(p.type) + '&sub=' + encodeURIComponent(p.sub) + '#boutique">' + esc(p.sub) + '</a>' : '') + '</nav>' +
         '<a class="pbrand" href="index.html?brand=' + encodeURIComponent(p.vendor) + '#boutique">' + esc(p.vendor) + '</a>' +
         '<h1>' + esc(p.title) + '</h1>' +
         '<div class="pprice">' + fmt(p.price) + (p.compareAt ? ' <s>' + fmt(p.compareAt) + '</s>' : '') + '</div>' +
