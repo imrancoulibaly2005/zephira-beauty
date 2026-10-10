@@ -91,6 +91,7 @@ select{font:inherit;padding:9px 12px;border-radius:10px;border:1.5px solid var(-
 .news input{padding:13px 20px;border-radius:999px;border:1.5px solid var(--line);min-width:280px;font:inherit;background:#fff}
 .ok{color:#2f7a4a;font-weight:600;margin-top:10px}
 
+.cimg img,.pimg img,.ci-img img,.hero-art img{width:100%;height:100%;object-fit:cover}
 .brands{background:#fff;border-bottom:1px solid var(--line)}
 .brands-in{display:flex;gap:6px 28px;justify-content:center;flex-wrap:wrap;padding-top:20px;padding-bottom:20px}
 .brands-in button{font-family:'Playfair Display',serif;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);padding:4px 2px;transition:.2s}

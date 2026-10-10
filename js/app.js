@@ -13,6 +13,8 @@
   }
   function byHandle(h) { return PRODUCTS.filter(function (p) { return p.handle === h; })[0]; }
   function art(p, vi, label) {
+    var img = (p.images && p.images[vi]) || p.image;
+    if (img) return '<img src="' + img + '" alt="' + (label || p.title).replace(/"/g, '&quot;') + '" loading="lazy">';
     return Art.render(p.art, p.variants[vi || 0].color, { pans: p.pans, label: label || p.title });
   }
 

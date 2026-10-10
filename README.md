@@ -26,3 +26,13 @@ npx serve .
 ## Déploiement
 
 Push sur GitHub, import du dépôt dans Vercel (aucun build, dossier racine).
+
+## Photos produits
+
+Les visuels actuels sont des illustrations de remplacement. Pour afficher de vraies photos :
+
+1. Récupérez les visuels officiels auprès de vos fournisseurs / distributeurs (kits presse ou portail revendeur des marques)
+2. Déposez-les dans `images/products/`
+3. Dans `data/products.json`, ajoutez au produit `"image": "images/products/<handle>.jpg"` (ou `"images": [...]` : une photo par teinte, dans l'ordre de `shades`)
+
+Le site, les fiches produit et le panier utilisent automatiquement la photo. Format conseillé : carré, 1200×1200 px, fond clair.
