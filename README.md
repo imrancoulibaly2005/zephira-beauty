@@ -13,7 +13,7 @@ npx serve .
 - `index.html` : accueil + catalogue (filtres, tri, pastilles de teintes)
 - `product.html?handle=…` : fiche produit (teintes, quantité, panier)
 - `data/products.json` : **catalogue**, calqué sur le modèle Shopify (handle, title, vendor, type, tags, variantes/teintes, prix, prix barré)
-- `js/art.js` : visuels produits en SVG (à remplacer par de vraies photos)
+- `images/products/` : photos produits
 - `scripts/export-shopify.mjs` : génère l'import Shopify
 
 ## Passer sur Shopify

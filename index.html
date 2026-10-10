@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zéphira Beauty – Parfumerie & maquillage des grandes marques</title>
+  <title>Zéphira Beauty – Les grandes marques de maquillage</title>
   <meta name="description" content="Zéphira Beauty : Huda Beauty, Fenty Beauty, Charlotte Tilbury, NARS, Rare Beauty et plus. Le maquillage des grandes marques, livré chez vous.">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23171717'/%3E%3Ctext x='16' y='23' font-size='20' text-anchor='middle' fill='%23c9a24b' font-family='serif'%3EZ%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%235e1b29'/%3E%3Ctext x='16' y='24' font-size='24' text-anchor='middle' fill='%23fff' font-family='serif'%3EZ%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body data-page="home">
@@ -16,47 +16,52 @@
     <section class="hero">
       <div class="wrap hero-in">
         <div class="hero-txt">
-          <span class="eyebrow">Les grandes marques, au même endroit</span>
-          <h1>L'éclat, <em>sans compromis.</em></h1>
-          <p>Huda Beauty, Fenty Beauty, Charlotte Tilbury, NARS… Retrouvez vos marques de maquillage préférées, sélectionnées par Zéphira.</p>
-          <div class="cta"><a href="#boutique" class="btn btn-dark">Découvrir la boutique</a><a href="index.html?cat=Coffrets#boutique" class="btn btn-line">Coffrets cadeaux</a></div>
+          <span class="kicker">Maquillage · Grandes marques</span>
+          <h1>Toute la beauté, <em>au même endroit.</em></h1>
+          <p>Huda Beauty, Fenty Beauty, Charlotte Tilbury, NARS, Rare Beauty… Vos marques préférées, sélectionnées et expédiées par Zéphira.</p>
+          <div class="cta"><a href="#boutique" class="btn btn-dark">Voir la boutique</a><a href="index.html?cat=Coffrets#boutique" class="btn btn-line">Coffrets</a></div>
         </div>
-        <div class="hero-art" id="hero-art" aria-hidden="true"></div>
+        <div class="hero-art" id="hero-art"></div>
       </div>
     </section>
 
-    <section class="usp"><div class="wrap usp-in">
-      <div>✅ <strong>100 % authentique</strong></div>
-      <div>🚚 Livraison offerte <strong>dès 60 €</strong></div>
-      <div>💎 <strong>Marques</strong> de référence</div>
-      <div>↩️ Retours <strong>sous 30 jours</strong></div>
-    </div></section>
-
     <section class="brands"><div class="wrap brands-in" id="brands" aria-label="Nos marques"></div></section>
 
-    <section class="section" id="boutique"><div class="wrap">
-      <div class="sh"><h2>La boutique</h2><p>Les best-sellers des marques que vous aimez.</p></div>
+    <section class="section"><div class="wrap">
+      <div class="sh"><h2>Acheter par catégorie</h2><p>Lèvres, regard, teint : trouvez l'essentiel de votre routine.</p></div>
+      <div class="cats" id="cats"></div>
+    </div></section>
+
+    <section class="section" id="boutique" style="padding-top:0"><div class="wrap">
+      <div class="sh"><h2>Les incontournables</h2><p>Les références les plus demandées, toutes marques confondues.</p></div>
       <div class="bar-tools">
         <div class="chips" id="chips"></div>
         <div class="tools"><span id="count"></span>
           <select id="brand" aria-label="Marque"></select>
-          <select id="sort" aria-label="Trier par"><option value="pop">Populaires</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option></select>
+          <select id="sort" aria-label="Trier par"><option value="pop">Pertinence</option><option value="asc">Prix croissant</option><option value="desc">Prix décroissant</option></select>
         </div>
       </div>
       <div class="grid" id="grid"></div>
     </div></section>
 
     <section class="promo"><div class="wrap promo-in">
-      <div><span class="eyebrow gold">Exclusivité Zéphira</span><h2>Coffret Soirée Glamour</h2><p>Huda Beauty, Fenty Beauty et Too Faced réunis dans un coffret. <strong>69 €</strong> au lieu de 80 €.</p>
-      <a href="product.html?handle=coffret-zephira-soiree-glamour" class="btn btn-gold">Je le veux</a></div>
+      <div class="promo-txt"><span class="kicker">Exclusivité Zéphira</span><h2>Le coffret soirée glamour</h2><p>Un rouge Huda Beauty, un Gloss Bomb Fenty Beauty et le mascara Too Faced. Le look complet, prêt à offrir.</p>
+      <a href="product.html?handle=coffret-zephira-soiree-glamour" class="btn btn-light">Découvrir · 69 €</a></div>
+      <div class="promo-img" id="promo-img"></div>
+    </div></section>
+
+    <section class="section"><div class="wrap svc">
+      <div><b>Livraison offerte</b><span>Dès 60 € d'achat, expédition sous 48 h.</span></div>
+      <div><b>100 % authentique</b><span>Produits issus de circuits officiels.</span></div>
+      <div><b>Paiement sécurisé</b><span>Carte, Apple Pay et Google Pay.</span></div>
+      <div><b>Retours sous 30 jours</b><span>Simples et gratuits pour les produits scellés.</span></div>
     </div></section>
 
     <section class="section news"><div class="wrap">
-      <h2>Rejoignez le club</h2><p>-10 % sur votre première commande, avant-premières et conseils make-up.</p>
+      <h2>Restez dans le coup</h2><p>Nouveautés, avant-premières et -10 % sur votre première commande.</p>
       <form id="news"><input type="email" required placeholder="Votre adresse e-mail" aria-label="E-mail"><button class="btn btn-dark">S'inscrire</button></form>
     </div></section>
   </main>
-  <script src="js/art.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>
