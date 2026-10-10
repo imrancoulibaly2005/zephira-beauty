@@ -19,8 +19,8 @@
   /* ---------- Panier (localStorage) ---------- */
   var Cart = {
     items: [],
-    load: function () { try { this.items = JSON.parse(localStorage.getItem('velora-cart')) || []; } catch (e) { this.items = []; } },
-    save: function () { try { localStorage.setItem('velora-cart', JSON.stringify(this.items)); } catch (e) {} this.render(); },
+    load: function () { try { this.items = JSON.parse(localStorage.getItem('zephira-cart')) || []; } catch (e) { this.items = []; } },
+    save: function () { try { localStorage.setItem('zephira-cart', JSON.stringify(this.items)); } catch (e) {} this.render(); },
     add: function (handle, vi, q) {
       var it = this.items.filter(function (i) { return i.handle === handle && i.vi === vi; })[0];
       if (it) it.qty += q; else this.items.push({ handle: handle, vi: vi, qty: q });
@@ -64,17 +64,17 @@
     var head = '<div class="topbar">Livraison offerte dès 60 € · Échantillons offerts dès 40 € d\'achat</div>' +
       '<header class="header"><div class="wrap hrow">' +
       '<button class="burger" aria-label="Menu" aria-expanded="false"><span></span><span></span><span></span></button>' +
-      '<a class="logo" href="index.html">VELORA<small>BEAUTY</small></a>' +
+      '<a class="logo" href="index.html">ZÉPHIRA<small>BEAUTY</small></a>' +
       '<nav class="nav" id="nav">' + cats.map(function (c) { return '<a href="index.html?cat=' + encodeURIComponent(c) + '#boutique">' + c + '</a>'; }).join('') +
       '<a href="index.html?cat=Promo#boutique" class="hot">Promos</a></nav>' +
       '<button class="cart-btn" aria-label="Ouvrir le panier"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8zM9 8V6a3 3 0 0 1 6 0v2"/></svg><span class="cart-count" hidden>0</span></button>' +
       '</div></header>';
     var foot = '<footer class="footer"><div class="wrap fgrid">' +
-      '<div><a class="logo light" href="index.html">VELORA<small>BEAUTY</small></a><p>Maquillage haute performance, vegan et cruelty-free. Fait pour sublimer toutes les beautés.</p></div>' +
+      '<div><a class="logo light" href="index.html">ZÉPHIRA<small>BEAUTY</small></a><p>Votre destination beauté : les plus grandes marques de maquillage, sélectionnées avec soin.</p></div>' +
       '<div><h4>Boutique</h4>' + cats.map(function (c) { return '<a href="index.html?cat=' + encodeURIComponent(c) + '#boutique">' + c + '</a>'; }).join('') + '</div>' +
       '<div><h4>Aide</h4><a href="#">Livraison &amp; retours</a><a href="#">Nous contacter</a><a href="#">FAQ</a><a href="#">Mentions légales</a></div>' +
       '<div><h4>Suivez-nous</h4><a href="#">Instagram</a><a href="#">TikTok</a><a href="#">YouTube</a></div>' +
-      '</div><div class="copy">© ' + new Date().getFullYear() + ' Velora Beauty · Site vitrine de démonstration</div></footer>' +
+      '</div><div class="copy">© ' + new Date().getFullYear() + ' Zéphira Beauty · Site vitrine de démonstration</div></footer>' +
       '<div class="overlay"></div><aside class="drawer" aria-label="Panier"><div class="dh"><h3>Votre panier</h3><button class="x" aria-label="Fermer">×</button></div>' +
       '<div class="ship"><div id="cart-ship"></div><div class="bar"><i id="cart-bar"></i></div></div>' +
       '<ul id="cart-items"></ul><div class="df"><div class="tot"><span>Sous-total</span><strong id="cart-total"></strong></div>' +
@@ -103,7 +103,7 @@
     }).join('') + (p.variants.length > 5 ? '<span class="more">+' + (p.variants.length - 5) + '</span>' : '');
     return '<article class="card" data-handle="' + p.handle + '">' +
       '<a class="cimg" href="product.html?handle=' + p.handle + '">' + (p.badge ? '<span class="badge">' + p.badge + '</span>' : '') + art(p, 0) + '</a>' +
-      '<div class="cbody"><small class="ctype">' + p.type + '</small>' +
+      '<div class="cbody"><small class="ctype">' + p.vendor + '</small>' +
       '<h3><a href="product.html?handle=' + p.handle + '">' + p.title + '</a></h3>' +
       '<div class="cprice">' + fmt(p.price) + (p.compareAt ? ' <s>' + fmt(p.compareAt) + '</s>' : '') + '</div>' +
       '<div class="sws">' + sw + '</div>' +
@@ -128,19 +128,32 @@
   function home() {
     var heroArt = $('#hero-art');
     if (heroArt) {
-      var pick = ['palette-desert-dore', 'rouge-velours-liquide-mat', 'gloss-cristal-volume'];
+      var pick = ['huda-beauty-desert-dusk-palette', 'charlotte-tilbury-pillow-talk-lipstick', 'fenty-beauty-gloss-bomb'];
       heroArt.innerHTML = pick.map(function (h, i) {
         var p = byHandle(h); return '<div class="h' + i + '">' + art(p, 0) + '</div>';
       }).join('');
     }
-    var cat = new URLSearchParams(location.search).get('cat') || 'Tout';
+    var qs = new URLSearchParams(location.search);
+    var cat = qs.get('cat') || 'Tout', brand = qs.get('brand') || '';
     var sort = 'pop';
+    var brands = PRODUCTS.map(function (p) { return p.vendor; }).filter(function (v, i, a) { return a.indexOf(v) === i; }).sort();
+    var bsel = $('#brand');
+    bsel.innerHTML = '<option value="">Toutes les marques</option>' + brands.map(function (b) { return '<option' + (b === brand ? ' selected' : '') + '>' + b + '</option>'; }).join('');
+    bsel.onchange = function () { brand = this.value; draw(); };
+    var strip = $('#brands');
+    strip.innerHTML = brands.filter(function (b) { return b !== 'Zéphira Beauty'; }).map(function (b) { return '<button data-b="' + b + '">' + b + '</button>'; }).join('');
+    strip.onclick = function (e) {
+      var b = e.target.closest('button'); if (!b) return;
+      brand = b.dataset.b; cat = 'Tout'; bsel.value = brand; draw();
+      $('#boutique').scrollIntoView();
+    };
     var grid = $('#grid'), chips = $('#chips');
     var cats = ['Tout', 'Lèvres', 'Yeux', 'Teint', 'Accessoires', 'Coffrets', 'Promo'];
     chips.innerHTML = cats.map(function (c) { return '<button class="chip" data-c="' + c + '">' + c + '</button>'; }).join('');
     function draw() {
       $$('.chip', chips).forEach(function (b) { b.classList.toggle('on', b.dataset.c === cat); });
       var list = PRODUCTS.filter(function (p) {
+        if (brand && p.vendor !== brand) return false;
         return cat === 'Tout' || (cat === 'Promo' ? !!p.compareAt : p.type === cat);
       });
       if (sort === 'asc') list.sort(function (a, b) { return a.price - b.price; });
@@ -162,13 +175,14 @@
     var h = new URLSearchParams(location.search).get('handle');
     var p = byHandle(h), root = $('#product');
     if (!p) { root.innerHTML = '<div class="wrap"><p class="empty">Produit introuvable. <a href="index.html">Retour à la boutique</a></p></div>'; return; }
-    document.title = p.title + ' – Velora Beauty';
+    document.title = p.title + ' – Zéphira Beauty';
     var vi = 0, q = 1;
     function draw() {
       var v = p.variants[vi];
       root.innerHTML = '<div class="wrap pgrid">' +
         '<div class="pimg">' + (p.badge ? '<span class="badge">' + p.badge + '</span>' : '') + art(p, vi) + '</div>' +
         '<div class="pinfo"><nav class="crumb"><a href="index.html">Accueil</a> / <a href="index.html?cat=' + encodeURIComponent(p.type) + '#boutique">' + p.type + '</a></nav>' +
+        '<a class="pbrand" href="index.html?brand=' + encodeURIComponent(p.vendor) + '#boutique">' + p.vendor + '</a>' +
         '<h1>' + p.title + '</h1>' +
         '<div class="pprice">' + fmt(p.price) + (p.compareAt ? ' <s>' + fmt(p.compareAt) + '</s>' : '') + '</div>' +
         '<p class="lead">' + p.short + '</p>' +
@@ -177,7 +191,7 @@
         '</div></div>' +
         '<div class="buy"><div class="qty"><button data-d="-1" aria-label="Moins">−</button><span>' + q + '</span><button data-d="1" aria-label="Plus">+</button></div>' +
         '<button class="btn btn-dark grow" id="addp">Ajouter au panier · ' + fmt(p.price * q) + '</button></div>' +
-        '<ul class="perks"><li>🚚 Livraison offerte dès 60 €</li><li>🌿 Vegan &amp; cruelty-free</li><li>↩️ Retours sous 30 jours</li></ul>' +
+        '<ul class="perks"><li>🚚 Livraison offerte dès 60 €</li><li>✅ Produits 100 % authentiques</li><li>↩️ Retours sous 30 jours</li></ul>' +
         '<details open><summary>Description</summary><p>' + p.description + '</p></details>' +
         '<details><summary>Détails</summary><ul class="dl">' + p.details.map(function (d) { return '<li>' + d + '</li>'; }).join('') + '</ul></details>' +
         '<p class="sku">Réf. ' + v.sku + '</p></div></div>';

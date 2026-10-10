@@ -1,6 +1,6 @@
-# Velora Beauty
+# Zéphira Beauty
 
-Boutique vitrine de cosmétiques, 100 % statique (HTML / CSS / JS), responsive, déployable sur Vercel et migrable vers Shopify.
+Boutique multimarques de cosmétiques (revendeur, style Sephora), 100 % statique (HTML / CSS / JS), responsive, déployable sur Vercel et migrable vers Shopify.
 
 ## Lancer en local
 

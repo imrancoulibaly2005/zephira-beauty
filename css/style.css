@@ -91,6 +91,12 @@ select{font:inherit;padding:9px 12px;border-radius:10px;border:1.5px solid var(-
 .news input{padding:13px 20px;border-radius:999px;border:1.5px solid var(--line);min-width:280px;font:inherit;background:#fff}
 .ok{color:#2f7a4a;font-weight:600;margin-top:10px}
 
+.brands{background:#fff;border-bottom:1px solid var(--line)}
+.brands-in{display:flex;gap:6px 28px;justify-content:center;flex-wrap:wrap;padding-top:20px;padding-bottom:20px}
+.brands-in button{font-family:'Playfair Display',serif;font-size:1.05rem;letter-spacing:.06em;text-transform:uppercase;color:var(--mut);padding:4px 2px;transition:.2s}
+.brands-in button:hover{color:var(--ink)}
+.pbrand{display:inline-block;color:var(--rose);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;margin-bottom:6px}
+.tools{flex-wrap:wrap}
 /* produit */
 .pgrid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
 .pimg{position:relative;border-radius:var(--r);overflow:hidden;aspect-ratio:1;border:1px solid var(--line);position:sticky;top:96px}
