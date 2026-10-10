@@ -1,158 +1,693 @@
 {
-  "store": { "name": "Zéphira Beauty", "currency": "EUR", "freeShippingFrom": 60 },
+  "store": {
+    "name": "Zéphira Beauty",
+    "currency": "EUR",
+    "freeShippingFrom": 60
+  },
   "products": [
     {
-      "handle": "huda-beauty-liquid-matte-lipstick", "sku": "HUDA-LIP-001", "title": "Liquid Matte Ultra-Comfort Transfer-proof Lipstick",
-      "vendor": "Huda Beauty", "type": "Lèvres", "art": "lipstick", "price": 27.0, "compareAt": null, "badge": "Best-seller",
-      "tags": ["lèvres", "mat", "longue tenue"],
+      "handle": "huda-beauty-liquid-matte-lipstick",
+      "sku": "HUDA-LIP-001",
+      "title": "Liquid Matte Ultra-Comfort Transfer-proof Lipstick",
+      "vendor": "Huda Beauty",
+      "type": "Lèvres",
+      "art": "lipstick",
+      "price": 27,
+      "compareAt": null,
+      "badge": "Best-seller",
+      "tags": [
+        "lèvres",
+        "mat",
+        "longue tenue"
+      ],
       "short": "Le rouge liquide mat longue tenue, confortable et sans transfert.",
       "description": "Rouge à lèvres liquide au fini mat, ultra-pigmenté et confortable, qui ne transfère pas. Une formule longue tenue pour une couleur intense en un seul passage.",
-      "details": ["Fini mat confortable", "Sans transfert", "Longue tenue", "Contenance : 4,2 ml"],
-      "shades": [["Bombshell", "#b3122a"], ["Muse", "#b85c60"], ["Famous", "#c4788a"], ["Trophy Wife", "#a54a3a"], ["Heartbreaker", "#7a1830"]]
+      "details": [
+        "Fini mat confortable",
+        "Sans transfert",
+        "Longue tenue",
+        "Contenance : 4,2 ml"
+      ],
+      "shades": [
+        [
+          "Bombshell",
+          "#b3122a"
+        ],
+        [
+          "Muse",
+          "#b85c60"
+        ],
+        [
+          "Famous",
+          "#c4788a"
+        ],
+        [
+          "Trophy Wife",
+          "#a54a3a"
+        ],
+        [
+          "Heartbreaker",
+          "#7a1830"
+        ]
+      ],
+      "image": "images/products/huda-beauty-liquid-matte-lipstick.jpg"
     },
     {
-      "handle": "huda-beauty-lip-contour-pencil", "sku": "HUDA-LIP-002", "title": "Lip Contour 2.0 – Crayon à lèvres automatique",
-      "vendor": "Huda Beauty", "type": "Lèvres", "art": "liner", "price": 22.0, "compareAt": null, "badge": "",
-      "tags": ["lèvres", "crayon"],
+      "handle": "huda-beauty-lip-contour-pencil",
+      "sku": "HUDA-LIP-002",
+      "title": "Lip Contour 2.0 – Crayon à lèvres automatique",
+      "vendor": "Huda Beauty",
+      "type": "Lèvres",
+      "art": "liner",
+      "price": 22,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "lèvres",
+        "crayon"
+      ],
       "short": "Contour précis, texture crémeuse, tenue longue durée.",
       "description": "Crayon à lèvres automatique à la mine crémeuse pour dessiner, définir et remplir les lèvres. Sans taille-crayon.",
-      "details": ["Mine rétractable", "Texture crémeuse", "Fini mat", "Sans taille-crayon"],
-      "shades": [["Universal Nude", "#b97c6b"], ["Rosewood", "#9c5b5b"], ["Hot Cherry", "#b3122a"], ["Deep Brown", "#5f3329"]]
+      "details": [
+        "Mine rétractable",
+        "Texture crémeuse",
+        "Fini mat",
+        "Sans taille-crayon"
+      ],
+      "shades": [
+        [
+          "Universal Nude",
+          "#b97c6b"
+        ],
+        [
+          "Rosewood",
+          "#9c5b5b"
+        ],
+        [
+          "Hot Cherry",
+          "#b3122a"
+        ],
+        [
+          "Deep Brown",
+          "#5f3329"
+        ]
+      ],
+      "image": "images/products/huda-beauty-lip-contour-pencil.webp"
     },
     {
-      "handle": "huda-beauty-desert-dusk-palette", "sku": "HUDA-EYE-001", "title": "Desert Dusk – Palette d'ombres à paupières 18 teintes",
-      "vendor": "Huda Beauty", "type": "Yeux", "art": "palette", "pans": 18, "price": 67.0, "compareAt": null, "badge": "Best-seller",
-      "tags": ["yeux", "palette", "pailleté"],
+      "handle": "huda-beauty-desert-dusk-palette",
+      "sku": "HUDA-EYE-001",
+      "title": "Desert Dusk – Palette d'ombres à paupières 18 teintes",
+      "vendor": "Huda Beauty",
+      "type": "Yeux",
+      "art": "palette",
+      "pans": 18,
+      "price": 67,
+      "compareAt": null,
+      "badge": "Best-seller",
+      "tags": [
+        "yeux",
+        "palette",
+        "pailleté"
+      ],
       "short": "18 teintes mates, métalliques et pailletées aux tons chauds.",
       "description": "Palette de 18 fards aux finis variés — mats, satinés, métalliques et pailletés — dans des tons chauds de coucher de soleil. Pigmentation intense, facile à estomper.",
-      "details": ["18 teintes", "Finis mats & pailletés", "Miroir intégré", "Pigmentation intense"],
-      "shades": [["Desert Dusk", "#c8893f"]]
+      "details": [
+        "18 teintes",
+        "Finis mats & pailletés",
+        "Miroir intégré",
+        "Pigmentation intense"
+      ],
+      "shades": [
+        [
+          "Desert Dusk",
+          "#c8893f"
+        ]
+      ]
     },
     {
-      "handle": "huda-beauty-faux-filter-foundation", "sku": "HUDA-FACE-001", "title": "#FauxFilter Luminous Matte Foundation",
-      "vendor": "Huda Beauty", "type": "Teint", "art": "foundation", "price": 40.0, "compareAt": null, "badge": "",
-      "tags": ["teint", "fond de teint", "haute couvrance"],
+      "handle": "huda-beauty-faux-filter-foundation",
+      "sku": "HUDA-FACE-001",
+      "title": "#FauxFilter Luminous Matte Foundation",
+      "vendor": "Huda Beauty",
+      "type": "Teint",
+      "art": "foundation",
+      "price": 40,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "teint",
+        "fond de teint",
+        "haute couvrance"
+      ],
       "short": "Haute couvrance, fini matte lumineux, jusqu'à 24h de tenue.",
       "description": "Fond de teint à haute couvrance qui unifie le teint pour un rendu peau lissée, mat et lumineux à la fois. Large gamme de teintes.",
-      "details": ["Haute couvrance", "Fini mat lumineux", "Large choix de teintes", "Contenance : 35 ml"],
-      "shades": [["Porcelaine", "#f0d3bd"], ["Vanille", "#e8c4a5"], ["Sable", "#d9ae8a"], ["Caramel", "#b98053"], ["Noisette", "#8a5738"], ["Ébène", "#5d3724"]]
+      "details": [
+        "Haute couvrance",
+        "Fini mat lumineux",
+        "Large choix de teintes",
+        "Contenance : 35 ml"
+      ],
+      "shades": [
+        [
+          "Porcelaine",
+          "#f0d3bd"
+        ],
+        [
+          "Vanille",
+          "#e8c4a5"
+        ],
+        [
+          "Sable",
+          "#d9ae8a"
+        ],
+        [
+          "Caramel",
+          "#b98053"
+        ],
+        [
+          "Noisette",
+          "#8a5738"
+        ],
+        [
+          "Ébène",
+          "#5d3724"
+        ]
+      ]
     },
     {
-      "handle": "fenty-beauty-gloss-bomb", "sku": "FENTY-LIP-001", "title": "Gloss Bomb Universal Lip Luminizer",
-      "vendor": "Fenty Beauty", "type": "Lèvres", "art": "gloss", "price": 23.0, "compareAt": null, "badge": "Best-seller",
-      "tags": ["lèvres", "gloss"],
+      "handle": "fenty-beauty-gloss-bomb",
+      "sku": "FENTY-LIP-001",
+      "title": "Gloss Bomb Universal Lip Luminizer",
+      "vendor": "Fenty Beauty",
+      "type": "Lèvres",
+      "art": "gloss",
+      "price": 23,
+      "compareAt": null,
+      "badge": "Best-seller",
+      "tags": [
+        "lèvres",
+        "gloss"
+      ],
       "short": "Le gloss universel ultra-brillant, non collant.",
       "description": "Gloss à l'effet miroir qui sublime toutes les carnations, avec une formule confortable et non collante, au parfum de vanille-pêche.",
-      "details": ["Ultra-brillant", "Non collant", "Applicateur doe-foot", "Contenance : 9 ml"],
-      "shades": [["Fenty Glow", "#e8a090"], ["Hot Chocolit", "#7a3e32"], ["Fu$$y", "#e27c9a"], ["Glass Slipper", "#f0d3d0"]]
+      "details": [
+        "Ultra-brillant",
+        "Non collant",
+        "Applicateur doe-foot",
+        "Contenance : 9 ml"
+      ],
+      "shades": [
+        [
+          "Fenty Glow",
+          "#e8a090"
+        ],
+        [
+          "Hot Chocolit",
+          "#7a3e32"
+        ],
+        [
+          "Fu$$y",
+          "#e27c9a"
+        ],
+        [
+          "Glass Slipper",
+          "#f0d3d0"
+        ]
+      ],
+      "image": "images/products/fenty-beauty-gloss-bomb.avif"
     },
     {
-      "handle": "fenty-beauty-pro-filtr-foundation", "sku": "FENTY-FACE-001", "title": "Pro Filt'r Soft Matte Longwear Foundation",
-      "vendor": "Fenty Beauty", "type": "Teint", "art": "foundation", "price": 38.0, "compareAt": null, "badge": "",
-      "tags": ["teint", "fond de teint", "mat"],
+      "handle": "fenty-beauty-pro-filtr-foundation",
+      "sku": "FENTY-FACE-001",
+      "title": "Pro Filt'r Soft Matte Longwear Foundation",
+      "vendor": "Fenty Beauty",
+      "type": "Teint",
+      "art": "foundation",
+      "price": 38,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "teint",
+        "fond de teint",
+        "mat"
+      ],
       "short": "Fini mat doux, tenue longue durée, 50 teintes.",
       "description": "Fond de teint longue tenue au fini mat doux, qui contrôle la brillance sans effet masque. Conçu pour toutes les carnations.",
-      "details": ["Fini mat doux", "Tenue longue durée", "Large gamme de teintes", "Contenance : 32 ml"],
-      "shades": [["110", "#f0d3bd"], ["190", "#e0b793"], ["240", "#c99870"], ["330", "#a9704a"], ["420", "#7d4a30"], ["490", "#4a2a1c"]]
+      "details": [
+        "Fini mat doux",
+        "Tenue longue durée",
+        "Large gamme de teintes",
+        "Contenance : 32 ml"
+      ],
+      "shades": [
+        [
+          "110",
+          "#f0d3bd"
+        ],
+        [
+          "190",
+          "#e0b793"
+        ],
+        [
+          "240",
+          "#c99870"
+        ],
+        [
+          "330",
+          "#a9704a"
+        ],
+        [
+          "420",
+          "#7d4a30"
+        ],
+        [
+          "490",
+          "#4a2a1c"
+        ]
+      ]
     },
     {
-      "handle": "fenty-beauty-killawatt-highlighter", "sku": "FENTY-FACE-002", "title": "Killawatt Foil Freestyle Highlighter",
-      "vendor": "Fenty Beauty", "type": "Teint", "art": "highlighter", "price": 36.0, "compareAt": null, "badge": "",
-      "tags": ["teint", "highlighter", "éclat"],
+      "handle": "fenty-beauty-killawatt-highlighter",
+      "sku": "FENTY-FACE-002",
+      "title": "Killawatt Foil Freestyle Highlighter",
+      "vendor": "Fenty Beauty",
+      "type": "Teint",
+      "art": "highlighter",
+      "price": 36,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "teint",
+        "highlighter",
+        "éclat"
+      ],
       "short": "Enlumineur métallique intense, modulable.",
       "description": "Enlumineur poudre-crème à l'éclat métallique intense. Se superpose pour un effet plus ou moins lumineux sur les pommettes, l'arcade et le nez.",
-      "details": ["Fini métallique", "Intensité modulable", "Format poudre-crème"],
-      "shades": [["Mimosa Sunrise", "#e2bb6a"], ["Hu$tla Baby", "#c18a52"], ["Ginger Binge", "#d99a6a"], ["Trophy Wife", "#e8cfae"]]
+      "details": [
+        "Fini métallique",
+        "Intensité modulable",
+        "Format poudre-crème"
+      ],
+      "shades": [
+        [
+          "Mimosa Sunrise",
+          "#e2bb6a"
+        ],
+        [
+          "Hu$tla Baby",
+          "#c18a52"
+        ],
+        [
+          "Ginger Binge",
+          "#d99a6a"
+        ],
+        [
+          "Trophy Wife",
+          "#e8cfae"
+        ]
+      ]
     },
     {
-      "handle": "rare-beauty-soft-pinch-liquid-blush", "sku": "RARE-FACE-001", "title": "Soft Pinch Liquid Blush",
-      "vendor": "Rare Beauty", "type": "Teint", "art": "concealer", "price": 25.0, "compareAt": null, "badge": "Nouveau",
-      "tags": ["teint", "blush", "liquide"],
+      "handle": "rare-beauty-soft-pinch-liquid-blush",
+      "sku": "RARE-FACE-001",
+      "title": "Soft Pinch Liquid Blush",
+      "vendor": "Rare Beauty",
+      "type": "Teint",
+      "art": "concealer",
+      "price": 25,
+      "compareAt": null,
+      "badge": "Nouveau",
+      "tags": [
+        "teint",
+        "blush",
+        "liquide"
+      ],
       "short": "Blush liquide ultra-pigmenté : une goutte suffit.",
       "description": "Blush liquide à la couleur intense et à la formule légère, qui se fond sur la peau pour un éclat naturel et durable.",
-      "details": ["Ultra-pigmenté", "Texture légère", "Fini naturel", "Contenance : 7,5 ml"],
-      "shades": [["Joy", "#e49aa0"], ["Hope", "#eb9c7e"], ["Happy", "#d26a60"], ["Bliss", "#b2455f"], ["Grace", "#c97a8a"]]
+      "details": [
+        "Ultra-pigmenté",
+        "Texture légère",
+        "Fini naturel",
+        "Contenance : 7,5 ml"
+      ],
+      "shades": [
+        [
+          "Joy",
+          "#e49aa0"
+        ],
+        [
+          "Hope",
+          "#eb9c7e"
+        ],
+        [
+          "Happy",
+          "#d26a60"
+        ],
+        [
+          "Bliss",
+          "#b2455f"
+        ],
+        [
+          "Grace",
+          "#c97a8a"
+        ]
+      ]
     },
     {
-      "handle": "nars-orgasm-blush", "sku": "NARS-FACE-001", "title": "Blush Orgasm",
-      "vendor": "NARS", "type": "Teint", "art": "blush", "price": 36.0, "compareAt": null, "badge": "Culte",
-      "tags": ["teint", "blush", "culte"],
+      "handle": "nars-orgasm-blush",
+      "sku": "NARS-FACE-001",
+      "title": "Blush Orgasm",
+      "vendor": "NARS",
+      "type": "Teint",
+      "art": "blush",
+      "price": 36,
+      "compareAt": null,
+      "badge": "Culte",
+      "tags": [
+        "teint",
+        "blush",
+        "culte"
+      ],
       "short": "Le blush culte rose-pêche à reflets dorés.",
       "description": "Blush poudre iconique, rose pêche aux reflets dorés scintillants, qui flatte toutes les carnations.",
-      "details": ["Reflets dorés", "Poudre fine", "Pigmentation modulable"],
-      "shades": [["Orgasm", "#e49a86"], ["Deep Throat", "#e0a0a0"], ["Torrid", "#c0505a"], ["Dolce Vita", "#b9707a"]]
+      "details": [
+        "Reflets dorés",
+        "Poudre fine",
+        "Pigmentation modulable"
+      ],
+      "shades": [
+        [
+          "Orgasm",
+          "#e49a86"
+        ],
+        [
+          "Deep Throat",
+          "#e0a0a0"
+        ],
+        [
+          "Torrid",
+          "#c0505a"
+        ],
+        [
+          "Dolce Vita",
+          "#b9707a"
+        ]
+      ]
     },
     {
-      "handle": "nars-radiant-creamy-concealer", "sku": "NARS-FACE-002", "title": "Radiant Creamy Concealer",
-      "vendor": "NARS", "type": "Teint", "art": "concealer", "price": 34.0, "compareAt": null, "badge": "",
-      "tags": ["teint", "correcteur", "anti-cernes"],
+      "handle": "nars-radiant-creamy-concealer",
+      "sku": "NARS-FACE-002",
+      "title": "Radiant Creamy Concealer",
+      "vendor": "NARS",
+      "type": "Teint",
+      "art": "concealer",
+      "price": 34,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "teint",
+        "correcteur",
+        "anti-cernes"
+      ],
       "short": "Correcteur crémeux, couvrance moyenne à haute, effet bonne mine.",
       "description": "Correcteur emblématique à la texture crémeuse qui estompe cernes et imperfections pour un regard reposé et lumineux.",
-      "details": ["Couvrance modulable", "Fini lumineux", "Large choix de teintes", "Contenance : 6 ml"],
-      "shades": [["Vanilla", "#f0d3bd"], ["Custard", "#e6c19c"], ["Chantilly", "#d9ae8a"], ["Caramel", "#b07a52"], ["Dark Coffee", "#6f4430"]]
+      "details": [
+        "Couvrance modulable",
+        "Fini lumineux",
+        "Large choix de teintes",
+        "Contenance : 6 ml"
+      ],
+      "shades": [
+        [
+          "Vanilla",
+          "#f0d3bd"
+        ],
+        [
+          "Custard",
+          "#e6c19c"
+        ],
+        [
+          "Chantilly",
+          "#d9ae8a"
+        ],
+        [
+          "Caramel",
+          "#b07a52"
+        ],
+        [
+          "Dark Coffee",
+          "#6f4430"
+        ]
+      ]
     },
     {
-      "handle": "charlotte-tilbury-pillow-talk-lipstick", "sku": "CT-LIP-001", "title": "Matte Revolution – Pillow Talk Lipstick",
-      "vendor": "Charlotte Tilbury", "type": "Lèvres", "art": "lipstick", "price": 38.0, "compareAt": null, "badge": "Culte",
-      "tags": ["lèvres", "rouge à lèvres", "nude"],
+      "handle": "charlotte-tilbury-pillow-talk-lipstick",
+      "sku": "CT-LIP-001",
+      "title": "Matte Revolution – Pillow Talk Lipstick",
+      "vendor": "Charlotte Tilbury",
+      "type": "Lèvres",
+      "art": "lipstick",
+      "price": 38,
+      "compareAt": null,
+      "badge": "Culte",
+      "tags": [
+        "lèvres",
+        "rouge à lèvres",
+        "nude"
+      ],
       "short": "Le nude rosé iconique qui flatte toutes les carnations.",
       "description": "Rouge à lèvres au fini mat satiné et à la tenue confortable, dans la célèbre teinte nude rosé Pillow Talk.",
-      "details": ["Fini mat satiné", "Nude rosé culte", "Étui doré"],
-      "shades": [["Pillow Talk", "#c68b7d"], ["Pillow Talk Medium", "#b4756a"], ["Pillow Talk Big Dream", "#a85f5f"], ["Walk of No Shame", "#a8404f"]]
+      "details": [
+        "Fini mat satiné",
+        "Nude rosé culte",
+        "Étui doré"
+      ],
+      "shades": [
+        [
+          "Pillow Talk",
+          "#c68b7d"
+        ],
+        [
+          "Pillow Talk Medium",
+          "#b4756a"
+        ],
+        [
+          "Pillow Talk Big Dream",
+          "#a85f5f"
+        ],
+        [
+          "Walk of No Shame",
+          "#a8404f"
+        ]
+      ]
     },
     {
-      "handle": "charlotte-tilbury-hollywood-flawless-filter", "sku": "CT-FACE-001", "title": "Hollywood Flawless Filter – Enlumineur teint",
-      "vendor": "Charlotte Tilbury", "type": "Teint", "art": "foundation", "price": 46.0, "compareAt": null, "badge": "",
-      "tags": ["teint", "enlumineur", "éclat"],
+      "handle": "charlotte-tilbury-hollywood-flawless-filter",
+      "sku": "CT-FACE-001",
+      "title": "Hollywood Flawless Filter – Enlumineur teint",
+      "vendor": "Charlotte Tilbury",
+      "type": "Teint",
+      "art": "foundation",
+      "price": 46,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "teint",
+        "enlumineur",
+        "éclat"
+      ],
       "short": "Le filtre lumineux pour un teint éclatant façon Hollywood.",
       "description": "Fluide enlumineur à porter seul, sous ou sur le fond de teint pour un teint lumineux, lissé et glowy.",
-      "details": ["Fini lumineux", "Se porte seul ou mélangé", "Texture fluide"],
-      "shades": [["Light", "#f0d9c4"], ["Medium", "#dcb08a"], ["Dark", "#9a6a46"]]
+      "details": [
+        "Fini lumineux",
+        "Se porte seul ou mélangé",
+        "Texture fluide"
+      ],
+      "shades": [
+        [
+          "Light",
+          "#f0d9c4"
+        ],
+        [
+          "Medium",
+          "#dcb08a"
+        ],
+        [
+          "Dark",
+          "#9a6a46"
+        ]
+      ]
     },
     {
-      "handle": "too-faced-better-than-sex-mascara", "sku": "TF-EYE-001", "title": "Better Than Sex Mascara",
-      "vendor": "Too Faced", "type": "Yeux", "art": "mascara", "price": 30.0, "compareAt": null, "badge": "Best-seller",
-      "tags": ["yeux", "mascara", "volume"],
+      "handle": "too-faced-better-than-sex-mascara",
+      "sku": "TF-EYE-001",
+      "title": "Better Than Sex Mascara",
+      "vendor": "Too Faced",
+      "type": "Yeux",
+      "art": "mascara",
+      "price": 30,
+      "compareAt": null,
+      "badge": "Best-seller",
+      "tags": [
+        "yeux",
+        "mascara",
+        "volume"
+      ],
       "short": "Mascara volume intense et cils dramatiques.",
       "description": "Mascara volumisant et allongeant au noir intense, avec une brosse sablier qui enrobe chaque cil.",
-      "details": ["Noir intense", "Brosse sablier", "Volume spectaculaire", "Contenance : 8 ml"],
-      "shades": [["Noir Intense", "#1a1a1a"]]
+      "details": [
+        "Noir intense",
+        "Brosse sablier",
+        "Volume spectaculaire",
+        "Contenance : 8 ml"
+      ],
+      "shades": [
+        [
+          "Noir Intense",
+          "#1a1a1a"
+        ]
+      ]
     },
     {
-      "handle": "anastasia-beverly-hills-brow-wiz", "sku": "ABH-EYE-001", "title": "Brow Wiz – Crayon à sourcils ultra-fin",
-      "vendor": "Anastasia Beverly Hills", "type": "Yeux", "art": "liner", "price": 27.0, "compareAt": null, "badge": "",
-      "tags": ["yeux", "sourcils", "crayon"],
+      "handle": "anastasia-beverly-hills-brow-wiz",
+      "sku": "ABH-EYE-001",
+      "title": "Brow Wiz – Crayon à sourcils ultra-fin",
+      "vendor": "Anastasia Beverly Hills",
+      "type": "Yeux",
+      "art": "liner",
+      "price": 27,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "yeux",
+        "sourcils",
+        "crayon"
+      ],
       "short": "Pointe ultra-fine pour dessiner poil par poil.",
       "description": "Crayon à sourcils rétractable à la pointe ultra-fine, pour un tracé précis et naturel, avec un goupillon intégré.",
-      "details": ["Pointe ultra-fine", "Goupillon intégré", "Résistant à l'eau"],
-      "shades": [["Blonde", "#b58a5a"], ["Medium Brown", "#6b4a35"], ["Dark Brown", "#4a2c22"], ["Ebony", "#1e1a18"]]
+      "details": [
+        "Pointe ultra-fine",
+        "Goupillon intégré",
+        "Résistant à l'eau"
+      ],
+      "shades": [
+        [
+          "Blonde",
+          "#b58a5a"
+        ],
+        [
+          "Medium Brown",
+          "#6b4a35"
+        ],
+        [
+          "Dark Brown",
+          "#4a2c22"
+        ],
+        [
+          "Ebony",
+          "#1e1a18"
+        ]
+      ]
     },
     {
-      "handle": "kvd-beauty-tattoo-liner", "sku": "KVD-EYE-001", "title": "Tattoo Liner – Eyeliner liquide longue tenue",
-      "vendor": "KVD Beauty", "type": "Yeux", "art": "eyeliner", "price": 24.0, "compareAt": null, "badge": "",
-      "tags": ["yeux", "eyeliner", "waterproof"],
+      "handle": "kvd-beauty-tattoo-liner",
+      "sku": "KVD-EYE-001",
+      "title": "Tattoo Liner – Eyeliner liquide longue tenue",
+      "vendor": "KVD Beauty",
+      "type": "Yeux",
+      "art": "eyeliner",
+      "price": 24,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "yeux",
+        "eyeliner",
+        "waterproof"
+      ],
       "short": "Trait précis et intense, tenue longue durée.",
       "description": "Eyeliner liquide à la pointe feutre fine pour un trait net et intense, qui reste en place toute la journée.",
-      "details": ["Pointe feutre précise", "Longue tenue", "Résistant à l'eau"],
-      "shades": [["Trooper Black", "#161616"], ["Brun Espresso", "#4a2c22"]]
+      "details": [
+        "Pointe feutre précise",
+        "Longue tenue",
+        "Résistant à l'eau"
+      ],
+      "shades": [
+        [
+          "Trooper Black",
+          "#161616"
+        ],
+        [
+          "Brun Espresso",
+          "#4a2c22"
+        ]
+      ]
     },
     {
-      "handle": "real-techniques-brush-set", "sku": "RT-ACC-001", "title": "Everyday Essentials – Set de pinceaux maquillage",
-      "vendor": "Real Techniques", "type": "Accessoires", "art": "brushes", "price": 30.0, "compareAt": null, "badge": "",
-      "tags": ["accessoires", "pinceaux", "set"],
+      "handle": "real-techniques-brush-set",
+      "sku": "RT-ACC-001",
+      "title": "Everyday Essentials – Set de pinceaux maquillage",
+      "vendor": "Real Techniques",
+      "type": "Accessoires",
+      "art": "brushes",
+      "price": 30,
+      "compareAt": null,
+      "badge": "",
+      "tags": [
+        "accessoires",
+        "pinceaux",
+        "set"
+      ],
       "short": "Les pinceaux essentiels pour le teint et les yeux.",
       "description": "Un set de pinceaux synthétiques doux pour réaliser un maquillage complet : teint, joues et yeux. Faciles à nettoyer.",
-      "details": ["Poils synthétiques", "Manches ergonomiques", "Lavables"],
-      "shades": [["Doré", "#d6b25a"], ["Rose", "#d79a98"]]
+      "details": [
+        "Poils synthétiques",
+        "Manches ergonomiques",
+        "Lavables"
+      ],
+      "shades": [
+        [
+          "Doré",
+          "#d6b25a"
+        ],
+        [
+          "Rose",
+          "#d79a98"
+        ]
+      ]
     },
     {
-      "handle": "coffret-zephira-soiree-glamour", "sku": "ZB-SET-001", "title": "Coffret Zéphira – Soirée Glamour",
-      "vendor": "Zéphira Beauty", "type": "Coffrets", "art": "gift", "price": 69.0, "compareAt": 80.0, "badge": "Exclusivité",
-      "tags": ["coffret", "cadeau", "exclusivité"],
+      "handle": "coffret-zephira-soiree-glamour",
+      "sku": "ZB-SET-001",
+      "title": "Coffret Zéphira – Soirée Glamour",
+      "vendor": "Zéphira Beauty",
+      "type": "Coffrets",
+      "art": "gift",
+      "price": 69,
+      "compareAt": 80,
+      "badge": "Exclusivité",
+      "tags": [
+        "coffret",
+        "cadeau",
+        "exclusivité"
+      ],
       "short": "Rouge Huda Beauty, Gloss Bomb Fenty et mascara Too Faced.",
       "description": "Notre coffret exclusif réunit un rouge à lèvres liquide Huda Beauty, un Gloss Bomb Fenty Beauty et le mascara Better Than Sex de Too Faced. Le look de soirée complet, prêt à offrir.",
-      "details": ["3 produits en taille réelle", "Coffret cadeau Zéphira", "Économie de 11 €"],
-      "shades": [["Rouge & Gloss", "#b3122a"], ["Nude & Gloss", "#c68b7d"]]
+      "details": [
+        "3 produits en taille réelle",
+        "Coffret cadeau Zéphira",
+        "Économie de 11 €"
+      ],
+      "shades": [
+        [
+          "Rouge & Gloss",
+          "#b3122a"
+        ],
+        [
+          "Nude & Gloss",
+          "#c68b7d"
+        ]
+      ]
     }
   ]
 }
