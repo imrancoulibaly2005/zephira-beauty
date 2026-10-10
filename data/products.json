@@ -123,7 +123,8 @@
           "Desert Dusk",
           "#c8893f"
         ]
-      ]
+      ],
+      "image": "images/products/huda-beauty-desert-dusk-palette.jpg"
     },
     {
       "handle": "huda-beauty-faux-filter-foundation",
@@ -173,7 +174,8 @@
           "Ébène",
           "#5d3724"
         ]
-      ]
+      ],
+      "image": "images/products/huda-beauty-faux-filter-foundation.avif"
     },
     {
       "handle": "fenty-beauty-gloss-bomb",
@@ -352,7 +354,8 @@
           "Grace",
           "#c97a8a"
         ]
-      ]
+      ],
+      "image": "images/products/rare-beauty-soft-pinch-liquid-blush.avif"
     },
     {
       "handle": "nars-orgasm-blush",
@@ -547,7 +550,8 @@
           "Noir Intense",
           "#1a1a1a"
         ]
-      ]
+      ],
+      "image": "images/products/too-faced-better-than-sex-mascara.avif"
     },
     {
       "handle": "anastasia-beverly-hills-brow-wiz",
@@ -654,7 +658,8 @@
           "Rose",
           "#d79a98"
         ]
-      ]
+      ],
+      "image": "images/products/real-techniques-brush-set.jpg"
     },
     {
       "handle": "coffret-zephira-soiree-glamour",
@@ -671,12 +676,12 @@
         "cadeau",
         "exclusivité"
       ],
-      "short": "Rouge Huda Beauty, Gloss Bomb Fenty et mascara Too Faced.",
-      "description": "Notre coffret exclusif réunit un rouge à lèvres liquide Huda Beauty, un Gloss Bomb Fenty Beauty et le mascara Better Than Sex de Too Faced. Le look de soirée complet, prêt à offrir.",
+      "short": "Palette, fond de teint, gloss, crayon, rouge à lèvres, enlumineur, pinceau et trousse en velours.",
+      "description": "Le coffret exclusif Zéphira Beauty : une palette d'ombres, un fond de teint, un gloss, un crayon à lèvres, un rouge à lèvres, un enlumineur, un pinceau et sa trousse en velours rose, réunis dans un coffret cadeau noué d'un ruban.",
       "details": [
-        "3 produits en taille réelle",
-        "Coffret cadeau Zéphira",
-        "Économie de 11 €"
+        "8 pièces + trousse en velours",
+        "Coffret cadeau avec ruban",
+        "Exclusivité Zéphira Beauty"
       ],
       "shades": [
         [
@@ -687,7 +692,8 @@
           "Nude & Gloss",
           "#c68b7d"
         ]
-      ]
+      ],
+      "image": "images/products/coffret-zephira-soiree-glamour.jpg"
     }
   ]
 }
