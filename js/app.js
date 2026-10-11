@@ -23,7 +23,7 @@
   /* Photo si disponible, sinon tuile « teinte » */
   function media(p, vi) {
     var img = (p.images && p.images[vi]) || p.image;
-    if (img) return '<div class="media"><img src="' + esc(img) + '" alt="' + esc(p.vendor + ' ' + p.title) + '" loading="lazy"></div>';
+    if (img) return '<div class="media' + (p.pack ? ' pack' : '') + '"><img src="' + esc(img) + '" alt="' + esc(p.vendor + ' ' + p.title) + '" loading="lazy"></div>';
     var v = p.variants[vi || 0];
     return '<div class="media"><div class="ph" style="--c:' + v.color + ';--t:' + tint(v.color, 0.82) + '">' +
       '<span class="ph-b">' + esc(p.vendor) + '</span><i class="ph-s"></i><span class="ph-n">' + esc(p.title.split(' – ')[0]) + '</span></div></div>';

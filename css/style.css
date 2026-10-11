@@ -1,4 +1,4 @@
-:root{--ink:#141211;--mut:#6f6862;--bg:#f6f3ef;--card:#efe9e3;--line:#e2dbd3;--acc:#5e1b29;--acc2:#7a2536;--white:#fff}
+:root{--ink:#1d1415;--mut:#86706f;--bg:#faf1ef;--card:#f1dfdc;--line:#e9d4d1;--acc:#6b1d2f;--acc2:#7a2536;--white:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth;scroll-padding-top:84px}
 body{font-family:Manrope,system-ui,sans-serif;color:var(--ink);background:var(--bg);line-height:1.55;-webkit-font-smoothing:antialiased;font-size:15px}
@@ -21,7 +21,7 @@ h1,h2,h3{font-family:'Instrument Serif',Georgia,serif;font-weight:400;line-heigh
 
 /* header */
 .topbar{background:var(--ink);color:#e9e2d9;text-align:center;font-size:.72rem;padding:9px 12px;letter-spacing:.08em}
-.header{position:sticky;top:0;z-index:30;background:rgba(246,243,239,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header{position:sticky;top:0;z-index:30;background:rgba(250,241,239,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
 .hrow{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;height:72px;gap:16px}
 .logo{font-family:'Instrument Serif',serif;font-size:2.1rem;line-height:1;letter-spacing:-.02em;display:inline-flex;align-items:baseline;gap:6px;justify-self:center}
 .logo small{font-family:Manrope;font-weight:700;font-size:.55rem;letter-spacing:.32em;text-transform:uppercase;color:var(--acc)}
@@ -232,3 +232,11 @@ details p,.dl{margin-top:12px;color:var(--mut);font-size:.92rem}.dl{padding-left
   .drop a{padding:6px 12px;border:1px solid var(--line);margin:0 6px 6px 0;font-size:.68rem;border-top:1px solid var(--line)}
   .nav .nav-i>a{display:block}
 }
+
+/* fond rose : les packshots sur fond blanc prennent la couleur de la tuile */
+.media.pack img{mix-blend-mode:multiply}
+.media{background:var(--card)}
+.topbar{background:var(--acc)}
+.footer{background:#2a1618}
+.promo{background:var(--acc)}
+.media.pack img{object-fit:contain}

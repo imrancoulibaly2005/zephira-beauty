@@ -73,7 +73,8 @@
         ]
       ],
       "image": "images/products/huda-beauty-liquid-matte-lipstick.jpg",
-      "sub": "Rouge à lèvres"
+      "sub": "Rouge à lèvres",
+      "pack": false
     },
     {
       "handle": "huda-beauty-lip-contour-pencil",
@@ -116,7 +117,8 @@
         ]
       ],
       "image": "images/products/huda-beauty-lip-contour-pencil.webp",
-      "sub": "Crayon à lèvres"
+      "sub": "Crayon à lèvres",
+      "pack": true
     },
     {
       "handle": "huda-beauty-desert-dusk-palette",
@@ -149,7 +151,8 @@
         ]
       ],
       "image": "images/products/huda-beauty-desert-dusk-palette.avif",
-      "sub": "Palettes"
+      "sub": "Palettes",
+      "pack": true
     },
     {
       "handle": "huda-beauty-faux-filter-foundation",
@@ -201,7 +204,8 @@
         ]
       ],
       "image": "images/products/huda-beauty-faux-filter-foundation.avif",
-      "sub": "Fond de teint"
+      "sub": "Fond de teint",
+      "pack": true
     },
     {
       "handle": "fenty-beauty-gloss-bomb",
@@ -244,7 +248,8 @@
         ]
       ],
       "image": "images/products/fenty-beauty-gloss-bomb.avif",
-      "sub": "Gloss"
+      "sub": "Gloss",
+      "pack": true
     },
     {
       "handle": "fenty-beauty-pro-filtr-foundation",
@@ -385,7 +390,8 @@
         ]
       ],
       "image": "images/products/rare-beauty-soft-pinch-liquid-blush.avif",
-      "sub": "Blush"
+      "sub": "Blush",
+      "pack": true
     },
     {
       "handle": "nars-orgasm-blush",
@@ -586,7 +592,8 @@
         ]
       ],
       "image": "images/products/too-faced-better-than-sex-mascara.avif",
-      "sub": "Mascara"
+      "sub": "Mascara",
+      "pack": true
     },
     {
       "handle": "anastasia-beverly-hills-brow-wiz",
@@ -697,7 +704,8 @@
         ]
       ],
       "image": "images/products/real-techniques-brush-set.jpg",
-      "sub": "Pinceaux"
+      "sub": "Pinceaux",
+      "pack": true
     },
     {
       "handle": "coffret-zephira-soiree-glamour",
@@ -733,7 +741,8 @@
         ]
       ],
       "image": "images/products/coffret-zephira-soiree-glamour.jpg",
-      "sub": ""
+      "sub": "",
+      "pack": false
     }
   ]
 }
